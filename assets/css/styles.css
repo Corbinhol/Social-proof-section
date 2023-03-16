@@ -1,4 +1,47 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    font-family: 'League Spartan', sans-serif;
+
+    --primary-color:  hsl(300, 43%, 22%);
+    --secondary-color: hsl(0, 0%, 100%);
+    --subtitle-color: hsl(333, 80%, 67%);
+    --rating-background: hsl(303, 10%, 53%);
+    --second-white: hsl(300, 24%, 96%);
+}
+
+main {
+
+}
+
+.header {
+    margin-left: 5em;
+    margin-top: 5em;
+    margin-right: 2em;
+}
+
+.header h1 {
+    color: var(--primary-color);
+    font-size: 4rem;
+    max-width: 14ch;
+    margin-bottom: .5em;
+}
+
+.header p {
+    max-width: 50ch;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+
+.top-bar {
+    display: flex;
+}
+
+.ratings .company-rating {
+    
 }
