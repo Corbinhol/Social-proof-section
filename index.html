@@ -22,16 +22,21 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        font-size: 11px;
-        text-align: center;
-        z-index: -1;
+        z-index: 0;
+        position: fixed;
+        bottom: 1vh;
+        display: flex;
+        width: 100vw; 
+        justify-content: center;
+        font-size: 1.3em;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+        margin-left: .2em;
       }
     </style>
   </head>
-  <body> 
+  <body>
     <main>
       <div class="top-bar">
         <div class="header">
@@ -107,36 +112,47 @@
       </div>
 
       <div class="reviews">
-        <div class="reviewer">
-          <img src="/images/image-colton.jpg" alt="image of Colton">
-          <h2>Colton Smith</h2> 
-          <h3>Verified Buyer</h3>
+        <div class="reviewer" id="colton">
+          <div class="top-half">
+            <img src="/images/image-colton.jpg" alt="image of Colton">
+            <div class="name">
+              <h2>Colton Smith</h2> 
+              <h3>Verified Buyer</h3>
+            </div>
+          </div>
           <p>"We needed the same printed design as the one we had ordered a week prior.
           Not only did they find the original order, but we also received it in time.
           Excellent!"</p>
         </div>
-        <div class="reviewer">
-          <img src="/images/image-irene.jpg" alt="image of Irene">
-          <h2>Irene Roberts</h2>
-          <h3>Verified Buyer</h3>
+        <div class="reviewer" id="irene">
+          <div class="top-half">
+            <img src="/images/image-irene.jpg" alt="image of Irene">
+            <div class="name">
+              <h2>Irene Roberts</h2> 
+              <h3>Verified Buyer</h3>
+            </div>
+          </div>
           <p>"Customer service is always excellent and very quick turn around. Completely
           delighted with the simplicity of the purchase and the speed of delivery."</p>
         </div>
-        <div class="reviewer">
-          <img src="/images/image-anne.jpg" alt="image of Anne">
-          <h2>Anne Wallace</h2>
-          <h3>Verified Buyer</h3>
+        <div class="reviewer" id="anne">
+          <div class="top-half">
+            <img src="/images/image-anne.jpg" alt="image of Anne">
+            <div class="name">
+              <h2>Anne Wallace</h2> 
+              <h3>Verified Buyer</h3>
+            </div>
+          </div>
           <p>"Put an order with this company and can only praise them for the very high
           standard. Will definitely use them again and recommend them to everyone!"</p>
         </div>
       </div>
     </main>
-
     <div class="attribution">
-      Challenge by
+      Challenge by 
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Corbin Holcombe</a>.
+        > Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Corbinhol"> Corbin Holcombe</a>.
     </div>
   </body>
 </html>
