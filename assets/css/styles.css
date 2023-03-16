@@ -7,8 +7,8 @@
     --primary-color:  hsl(300, 43%, 22%);
     --secondary-color: hsl(0, 0%, 100%);
     --subtitle-color: hsl(333, 80%, 67%);
-    --rating-background: hsl(303, 10%, 53%);
-    --second-white: hsl(300, 24%, 96%);
+    --something: hsl(303, 10%, 53%);
+    --rating-background: hsl(300, 24%, 96%);
 }
 
 main {
@@ -16,9 +16,11 @@ main {
 }
 
 .header {
-    margin-left: 5em;
-    margin-top: 5em;
+    margin-left: 10em;
+    margin-top: 7em;
     margin-right: 2em;
+    margin-bottom: 7em;
+    /* min-width: 50vw; */
 }
 
 .header h1 {
@@ -40,8 +42,46 @@ p {
 
 .top-bar {
     display: flex;
+    /* justify-content:space-evenly; */
 }
 
-.ratings .company-rating {
-    
+.ratings {
+    /* margin-left: 10em; */
+    margin-top: 8em;
+    min-width: 50vw;
+    padding-right: 10em;
+}
+
+.company-rating {
+    display: flex;
+    padding: 1em 2em;
+    padding-right: 3em;
+    background: var(--rating-background);
+    border-radius: 1em;
+    margin: 1em 0em;
+    width: 50%;
+    margin-left: 10em;
+}
+
+.company-rating#second {
+    margin-left: 15em;
+}
+
+.company-rating#third {
+    margin-left: 20em;
+}
+
+
+.company-rating p {
+    margin-left: 3em;
+
+}
+
+.company-rating ul {
+    display: flex;
+    list-style: none;
+}
+
+.company-rating ul li {
+    margin: 0 .25em;
 }
